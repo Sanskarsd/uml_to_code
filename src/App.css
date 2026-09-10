@@ -1,0 +1,855 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #0f1117;
+}
+
+
+/* =========================================
+   APP
+========================================= */
+
+.app {
+  min-height: 100vh;
+
+  background: #0f1117;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 28px;
+
+  background: #11141b;
+
+  border-bottom: 1px solid #292d36;
+}
+
+.header h1 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9ca1ad;
+
+  font-size: 13px;
+}
+
+.header-right select {
+  padding: 7px 10px;
+
+  background: #181b22;
+
+  border: 1px solid #343944;
+
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: calc(100vh - 64px);
+}
+
+
+/* =========================================
+   PANELS
+========================================= */
+
+.left-panel {
+  padding: 24px 28px 40px;
+
+  border-right: 1px solid #292d36;
+
+  overflow-y: auto;
+}
+
+.right-panel {
+  padding: 24px 28px 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================
+   PANEL HEADINGS
+========================================= */
+
+.left-panel > h2,
+.right-panel > h2 {
+  margin: 0 0 20px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.2px;
+
+  color: #8f95a3;
+}
+
+
+/* =========================================
+   CLASS PROPERTIES
+========================================= */
+
+.class-properties {
+  margin-bottom: 24px;
+
+  padding: 16px;
+
+  border: 1px solid #292d36;
+
+  border-radius: 6px;
+
+  background: #12151c;
+}
+
+.property-title {
+  margin-bottom: 16px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: #a3a8b4;
+}
+
+.property-group {
+  margin-bottom: 13px;
+}
+
+.property-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #858b98;
+
+  font-size: 11px;
+}
+
+.property-group input,
+.property-group select {
+  width: 100%;
+
+  height: 35px;
+
+  padding: 0 10px;
+
+  background: #181b22;
+
+  border: 1px solid #30343e;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  outline: none;
+
+  font-size: 12px;
+}
+
+.property-group input:focus,
+.property-group select:focus {
+  border-color: #6c63ff;
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.checkbox-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #a8adb8;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.checkbox-row input {
+  accent-color: #6c63ff;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   EDITOR SECTION
+========================================= */
+
+.editor-section {
+  margin-bottom: 24px;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.section-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+.section-header h3 {
+  margin: 0;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: #a3a8b4;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-button {
+  padding: 6px 11px;
+
+  background: #28245c;
+
+  border: 1px solid #5149b8;
+
+  border-radius: 5px;
+
+  color: #bcb8ff;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #332e75;
+}
+
+
+/* =========================================
+   ATTRIBUTE ROW
+========================================= */
+
+.attribute-row {
+  display: grid;
+
+  grid-template-columns:
+    48px
+    1fr
+    110px
+    32px;
+
+  gap: 7px;
+
+  margin-bottom: 7px;
+}
+
+
+/* =========================================
+   METHOD CARD
+========================================= */
+
+.method-card {
+  margin-bottom: 12px;
+
+  padding: 10px;
+
+  border: 1px solid #292d36;
+
+  border-radius: 5px;
+
+  background: #12151b;
+}
+
+
+/* =========================================
+   METHOD ROW
+========================================= */
+
+.method-row {
+  display: grid;
+
+  grid-template-columns:
+    48px
+    1fr
+    110px
+    32px;
+
+  gap: 7px;
+}
+
+
+/* =========================================
+   INPUTS / SELECTS
+========================================= */
+
+.attribute-row input,
+.attribute-row select,
+.method-row input,
+.method-row select,
+.parameter-row input {
+  width: 100%;
+
+  height: 34px;
+
+  padding: 0 9px;
+
+  background: #171a21;
+
+  border: 1px solid #30343e;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  outline: none;
+}
+
+.attribute-row input:focus,
+.attribute-row select:focus,
+.method-row input:focus,
+.method-row select:focus,
+.parameter-row input:focus {
+  border-color: #6c63ff;
+}
+
+.attribute-row input::placeholder,
+.method-row input::placeholder,
+.parameter-row input::placeholder {
+  color: #626875;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-button {
+  width: 32px;
+
+  height: 34px;
+
+  border: 1px solid #343944;
+
+  border-radius: 4px;
+
+  background: #1b1e25;
+
+  color: #ef6b73;
+
+  font-size: 17px;
+
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #302025;
+
+  border-color: #71383d;
+}
+
+
+/* =========================================
+   METHOD OPTIONS
+========================================= */
+
+.method-options {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10px;
+}
+
+
+/* =========================================
+   PARAMETER BUTTON
+========================================= */
+
+.parameter-button {
+  padding: 5px 9px;
+
+  background: #191c23;
+
+  border: 1px solid #343944;
+
+  border-radius: 4px;
+
+  color: #aeb3be;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.parameter-button:hover {
+  background: #232731;
+}
+
+
+/* =========================================
+   PARAMETERS
+========================================= */
+
+.parameters {
+  margin-top: 10px;
+
+  padding: 10px;
+
+  border-top: 1px solid #292d36;
+}
+
+.parameter-title {
+  margin-bottom: 8px;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+
+  color: #777e8b;
+}
+
+.parameter-row {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    100px
+    32px;
+
+  gap: 7px;
+
+  margin-bottom: 7px;
+}
+
+
+/* =========================================
+   EMPTY MESSAGE
+========================================= */
+
+.empty-message {
+  padding: 12px;
+
+  border: 1px dashed #30343e;
+
+  border-radius: 5px;
+
+  color: #626875;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   UML AREA
+========================================= */
+
+.uml-area {
+  min-height: 300px;
+
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: #0c0f14;
+
+  border: 1px solid #292d36;
+
+  border-radius: 6px;
+
+  overflow: auto;
+}
+
+
+/* =========================================
+   UML CLASS
+========================================= */
+
+.uml-class {
+  width: 360px;
+
+  min-width: 360px;
+
+  background: #171a21;
+
+  border: 1px solid #a4a8b2;
+
+  color: #ffffff;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   UML CLASS NAME
+========================================= */
+
+.uml-class-name {
+  min-height: 60px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  border-bottom: 1px solid #a4a8b2;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.uml-class-stereotype {
+  min-height: 16px;
+
+  color: #9da2ae;
+
+  font-size: 10px;
+
+  font-style: italic;
+
+  font-weight: normal;
+}
+
+
+/* =========================================
+   UML ATTRIBUTES
+========================================= */
+
+.uml-attributes {
+  min-height: 100px;
+
+  padding: 14px 16px;
+
+  border-bottom: 1px solid #a4a8b2;
+}
+
+
+/* =========================================
+   UML METHODS
+========================================= */
+
+.uml-methods {
+  min-height: 75px;
+
+  padding: 14px 16px;
+}
+
+
+/* =========================================
+   UML LINE
+========================================= */
+
+.uml-line {
+  min-height: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   CONVERT BUTTON
+========================================= */
+
+.convert-button {
+  width: 100%;
+
+  height: 42px;
+
+  margin-top: 18px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #6c63ff;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.convert-button:hover {
+  background: #5c54df;
+}
+
+
+/* =========================================
+   CODE HEADER
+========================================= */
+
+.code-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.code-header h2 {
+  margin: 0;
+
+  font-family: monospace;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: #c4c8d1;
+}
+
+
+/* =========================================
+   COPY BUTTON
+========================================= */
+
+.copy-button {
+  padding: 6px 12px;
+
+  border: 1px solid #343944;
+
+  border-radius: 5px;
+
+  background: #181b22;
+
+  color: #c3c7d0;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.copy-button:hover:not(:disabled) {
+  background: #222630;
+}
+
+.copy-button:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   CODE CONTAINER
+========================================= */
+
+.code-container {
+  flex: 1;
+
+  min-height: 500px;
+
+  background: #090b0f;
+
+  border: 1px solid #292d36;
+
+  border-radius: 6px;
+
+  overflow: auto;
+}
+
+
+/* =========================================
+   GENERATED CODE
+========================================= */
+
+.java-code {
+  margin: 0;
+
+  padding: 20px;
+
+  color: #d7dae1;
+
+  font-family:
+    "Fira Code",
+    "Courier New",
+    monospace;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  white-space: pre-wrap;
+}
+
+.java-code code {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   CODE PLACEHOLDER
+========================================= */
+
+.code-placeholder {
+  padding: 20px;
+
+  color: #555b67;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-panel {
+    border-right: none;
+
+    border-bottom: 1px solid #292d36;
+  }
+
+  .right-panel {
+    min-height: 600px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 15px;
+  }
+
+  .header h1 {
+    font-size: 15px;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 18px 15px;
+  }
+
+  .attribute-row,
+  .method-row {
+    grid-template-columns:
+      42px
+      1fr
+      80px
+      30px;
+  }
+
+  .parameter-row {
+    grid-template-columns:
+      1fr
+      80px
+      30px;
+  }
+
+  .uml-class {
+    width: 300px;
+
+    min-width: 300px;
+  }
+}
