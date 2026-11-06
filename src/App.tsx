@@ -10,6 +10,8 @@ type ClassAccess = "public" | "private" | "protected";
 type Language = "java" | "python" | "cpp";
 
 type Attribute = {
+
+  
   id: number;
   access: AccessModifier;
   name: string;
